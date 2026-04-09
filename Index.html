@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Pendaftaran</title>
+    <link rel="stylesheet" href="Sumatif5.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Pendaftaran | Fresh Style</h2>
+    <p class="description">Isi data dengan teliti, semua informasi akan digunakan untuk keperluan administrasi.</p>
+
+    <form id="registrationForm">
+        <label for="nama">Nama Lengkap *</label>
+        <input type="text" id="nama" placeholder="cth: Siti Aisyah">
+        <div class="helper-text">Nama sesuai KTP / Akta kelahiran</div>
+
+        <label for="kelas">Kelas / Tingkatan *</label>
+        <input type="text" id="kelas" placeholder="cth: XII MIPA 3/8A/3 SD">
+        <div class="helper-text">Kelas saat ini atau kelas tujuan</div>
+
+        <label>Jenis Kelamin</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+            <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+            <label><input type="radio" name="gender" value="Lainnya"> Lainnya</label>
+        </div>
+
+        <label>Ekstrakurikuler yang diminati</label>
+        <div class="radio-group">
+            <label><input type="checkbox" name="extra" value="Basket"> Basket</label>
+            <label><input type="checkbox" name="extra" value="Futsal"> Futsal</label>
+            <label><input type="checkbox" name="extra" value="Paduan Suara"> Paduan Suara</label>
+        </div>
+
+        <label>Pilih Jadwal Belajar *wajib</label>
+        <div class="radio-group">
+            <label><input type="radio" name="jadwal" value="Pagi (07.00-12.00)"> Pagi (07.00-12.00)</label>
+            <label><input type="radio" name="jadwal" value="Siang (12.30-17.00)"> Siang (12.30-17.00)</label>
+            <label><input type="radio" name="jadwal" value="Sore (17.30-20.30)"> Sore (17.30-20.30)</label>
+            <label><input type="radio" name="jadwal" value="Campuran (fleksibel)"> Campuran (fleksibel)</label>
+        </div>
+
+        <button type="button" id="tampilkanBtn">Daftar Sekarang</button>
+        <button type="button" id="resetBtn" style="background-color: #dc3545; margin-left: 10px;">Reset Formulir</button>
+    </form>
+
+    <div id="hasil" class="result">Data akan muncul di sini...</div>
+</div>
